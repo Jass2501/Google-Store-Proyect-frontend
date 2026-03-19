@@ -1,0 +1,419 @@
+/* ------------------ RESET ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+/* ------------------ UTILIDADES ------------------ */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-btn {
+    width: 20px;
+    cursor: pointer;
+    transition: opacity .2s;
+}
+
+.icon-btn:hover {
+    opacity: .7;
+}
+
+.rounded {
+    border-radius: 12px;
+}
+
+/* ------------------ HEADER ------------------ */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0 32px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo-google {
+  width: 40px;
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c4043;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #1a73e8;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* ------------------ PRODUCTO ------------------ */
+p {
+    color: #666666;
+}
+.product-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+}
+
+/* Galería */
+.product-gallery {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+}
+
+.product-thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-thumbs img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid #3b3b3b;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.product-thumbs img:hover {
+    transform: scale(1.1);
+}
+
+.product-main {
+    padding: 40px;
+    border-radius: 20px;
+    background: #ebebeb;
+    display: flex;
+    justify-content: center;
+}
+
+.product-main img {
+    max-width: 100%;
+}
+
+/* Info */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-info h1 {
+    font-size: 2.5rem;
+}
+
+.category {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Colores */
+.color-selector {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.color-dot {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #dadce0;
+    cursor: pointer;
+    transition: .2s;
+}
+.color-dot.selected {
+  outline: 1px solid black;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px #1a73e8;
+}
+
+
+.color-dot:hover {
+    transform: scale(1.1);
+    border-color: #70757a;
+}
+
+.sky {
+    background: #9ec5ea;
+}
+
+.beige {
+    background: #e7e4de;
+}
+
+.dark {
+    background: #4c4b4e;
+}
+
+.gray {
+    background: #d3d7da;
+}
+
+.green {
+    background: #e2e5b6;
+}
+
+.coral {
+    background: #e18572;
+}
+
+.color-dot-watch {
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10%;
+    border: 1px solid #000000;
+    width: 155px;
+    height: 115px;
+}
+
+.color-dot-watch img {
+    width: 80px;      /* ajusta el tamaño que quieras */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease, outline 0.2s ease;
+}
+
+/* Cuando está seleccionado */
+.color-dot-watch.selected img {
+    outline: 3px solid #4285f4; /* azul estilo Google */
+    transform: scale(1.05);
+}
+.color-dot-watch:hover {
+    transform: scale(1.1);
+    border-color: #70757a;
+}
+
+/* Compra */
+.buy-box {
+    background: #ebebeb;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.buy-price {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.buy-action {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.add-cart {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #1a73e8;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.add-cart:hover {
+    background: #1765cc;
+}
+
+.delivery {
+    font-size: 14px;
+    color: #666;
+}
+
+.text-blue {
+    color: #1a73e8;
+    font-weight: 600;
+}
+
+/* ------------------ FOOTER ------------------ */
+.footer {
+    background: #ebebeb;
+    padding: 20px 40px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-social {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-social img {
+    width: 22px;
+    cursor: pointer;
+    opacity: .8;
+    transition: .2s;
+}
+
+.footer-social img:hover {
+    opacity: 1;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-country {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-country img {
+    width: 20px;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .product-thumbs {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .product-gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-thumbs {
+        order: 2;
+        /* Thumbnails debajo */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .product-main {
+        order: 1;
+        /* Imagen principal arriba */
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        display: none;
+    }
+
+    .product-info h1 {
+        font-size: 24px;
+    }
+
+    .buy-action {
+        flex-direction: column;
+    }
+
+    .product-main {
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}

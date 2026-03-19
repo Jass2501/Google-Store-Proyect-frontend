@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Pixel Buds Pro</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/google-logo.png" alt="Google" class="logo-google">
+            <nav>
+                <ul>
+                    <li><a href="#">Phones</a></li>
+                    <li><a href="#" class="active">Earbuds</a></li>
+                    <li><a href="page/smartwatch.html">Watches</a></li>
+                    <li><a href="#">Smart Home</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <img src="images/icons/Search-Lupa.svg" alt="Buscar" class="icon-btn">
+            <img src="images/icons/Help-Intrrogación.svg" alt="Ayuda" class="icon-btn">
+            <img id="cartIcon" src="images/icons/Cart-Carrito.svg" alt="Carrito" class="icon-btn">
+            <img src="images/icons/Avatar-foto.svg" alt="Cuenta" class="icon-btn">
+        </div>
+    </header>
+
+    <main class="product-container">
+        <section class="product-gallery">
+            <div class="product-thumbs">
+                <img src="images/earbuds/earbuds_01.png" alt="Vista frontal">
+                <img src="images/earbuds/earbuds_02.png" alt="Vista lateral">
+                <img src="images/earbuds/earbuds_03.png" alt="Detalle">
+                <img src="images/earbuds/earbuds_04.png" alt="En uso">
+            </div>
+
+            <div class="product-main">
+                <img id="mainImage" src="images/earbuds/earbuds_01.png" alt="Google Pixel Buds Pro">
+            </div>
+        </section>
+
+        <aside class="product-info">
+            <h1>Google Pixel Buds Pro</h1>
+            <p class="category">Music & Sound</p>
+            <p class="price">229€</p>
+            <hr>
+
+            <div class="colors">
+                <p>Choose a color</p>
+                <div class="color-selector">
+                    <button class="color-dot sky" data-color="azul cielo"></button>
+                    <button class="color-dot beige" data-color="Beige claro"></button>
+                    <button class="color-dot dark" data-color="Gris oscuro"></button>
+                    <button class="color-dot gray" data-color="Gris claro"></button>
+                    <button class="color-dot green" data-color="Verde pastel"></button>
+                    <button class="color-dot coral" data-color="Coral"></button>
+                </div>
+            </div>
+
+            <div class="buy-box">
+                <p class="buy-price">229€</p>
+
+                <div class="buy-action">
+                    <select id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <button class="add-cart" id="addCartBtn">Add to Cart</button>
+                </div>
+
+                <p class="delivery">
+                    <img src="images/icons/Delivery-Camión.svg" alt="Delivery" class="truck-icon">
+                    Delivers 29 Apr to <a href="#">39003</a>
+                </p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <img src="images/icons/SM-x.svg" alt="X">
+                <img src="images/icons/SM-instagram.svg" alt="Instagram">
+                <img src="images/icons/SM-facebook.svg" alt="Facebook">
+                <img src="images/icons/SM-youtube.svg" alt="YouTube">
+                <img src="images/icons/SM-tiktok.svg" alt="TikTok">
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-country">
+                    <img src="images/icons/Spain.svg" alt="Spain">
+                    <span>Spain</span>
+                </div>
+
+                <a href="#">Privacy</a>
+                <a href="#">Google Nest Commitment to Privacy</a>
+                <a href="#">Sales Terms</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

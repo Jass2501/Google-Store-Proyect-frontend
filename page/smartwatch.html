@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Pixel Buds Pro</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="../images/google-logo.png" alt="Google" class="logo-google">
+            <nav>
+                <ul>
+                    <li><a href="#">Phones</a></li>
+                    <li><a href="../index.html">Earbuds</a></li>
+                    <li><a href="#" class="active">Watches</a></li>
+                    <li><a href="#">Smart Home</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <img src="../images/icons/Search-Lupa.svg" alt="Buscar" class="icon-btn">
+            <img src="../images/icons/Help-Intrrogación.svg" alt="Ayuda" class="icon-btn">
+            <img id="cartIcon" src="../images/icons/Cart-Carrito.svg" alt="Carrito" class="icon-btn">
+            <img src="../images/icons/Avatar-foto.svg" alt="Cuenta" class="icon-btn">
+        </div>
+    </header>
+
+    <main class="product-container">
+        <section class="watch-gallery">
+            <div class="product-main">
+                <img id="mainImage" src="../images/smartwatch/smartwatch_black.png" alt="Fitbit Inspire 3">
+            </div>
+        </section>
+
+        <aside class="product-info">
+            <h1>Fitbit Inspire 3</h1>
+            <p class="category">Health & Fitness Tracker</p>
+            <p class="price">99,95€</p>
+            <hr />
+            <p>Choose a color</p>
+            <div class="color-selector">
+                <button class="color-dot-watch black" data-color="negro">
+                    <img src="../images/smartwatch/smartwatch_black.png" alt="black" />
+                    <p>Midnight Zen</p>
+                </button>
+                <button class="color-dot-watch pink" data-color="rosa">
+                    <img src="../images/smartwatch/smartwatch_pink.png" alt="pink" />
+                    <p>Lilac Bliss</p>
+                </button>
+                <button class="color-dot-watch yellow" data-color="amarillo">
+                    <img src="../images/smartwatch/smartwatch_yellow.png" alt="yellow" />
+                    <p>Morning Glow</p>
+                </button>
+            </div>
+
+            <div class="buy-box">
+                <p class="buy-price">99,95€</p>
+
+                <div class="buy-action">
+                    <select id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <button class="add-cart" id="addCartBtn">Add to Cart</button>
+                </div>
+
+                <p class="delivery">
+                    <img src="../images/icons/Delivery-Camión.svg" alt="Delivery" class="truck-icon">
+                    Delivers 29 Apr to <a href="#">39003</a>
+                </p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <img src="../images/icons/SM-x.svg" alt="X">
+                <img src="../images/icons/SM-instagram.svg" alt="Instagram">
+                <img src="../images/icons/SM-facebook.svg" alt="Facebook">
+                <img src="../images/icons/SM-youtube.svg" alt="YouTube">
+                <img src="../images/icons/SM-tiktok.svg" alt="TikTok">
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-country">
+                    <img src="../images/icons/Spain.svg" alt="Spain">
+                    <span>Spain</span>
+                </div>
+
+                <a href="#">Privacy</a>
+                <a href="#">Google Nest Commitment to Privacy</a>
+                <a href="#">Sales Terms</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>
