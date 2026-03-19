@@ -1,24 +1,28 @@
 # Google-Store-Proyect-frontend
 
-Proyecto realizado como práctica de maquetación y desarrollo web utilizando **HTML5, CSS3 y JavaScript**, siguiendo un diseño proporcionado en formato JPG y un *sticker sheet* oficial.
+Es un proyecto desarrollado como práctica de **desarrollo web frontend**, implementado con **HTML5, CSS3 y JavaScript**, basado en la recreación de dos productos nuevos dentro de la página de Google Store.
 
 ---
 
 ## Objetivos del proyecto
 
-El propósito principal del trabajo fue **integrar dos nuevos productos** dentro de la página existente de Google Store. Para ello, seguí un flujo completo de diseño y desarrollo:
+El objetivo principal fue **integrar dos nuevos productos** dentro de una interfaz existente, aplicando buenas prácticas de estructura HTML, estilos CSS y lógica JavaScript.  
+Las metas específicas fueron:
 
-- Implementar la web utilizando **HTML5 y CSS3**, para *desktop, tablet y mobile*.
-- Añadir interactividad con **JavaScript**, incluyendo selección de imágenes, colores y carrito persistente.
+- Implementar la web utilizando **HTML5 y CSS3** en versiones *desktop, tablet y mobile*.  
+- Añadir interactividad con **JavaScript**, incluyendo:
+  - Cambio dinámico de imágenes.
+  - Selección de colores.
+  - Carrito persistente mediante `localStorage`.
 
 ---
 
-## Competencias técnicas desarrolladas
+## Desarrollo técnico
 
 - Diseño de una aplicación web (nivel 1)  
-- Maquetación de una aplicación desktop (nivel 1)  
+- Maquetación responsive con HTML5 y CSS3 (nivel 1)  
 - Creación de una página web estática (nivel 1)  
-- Desarrollo de una página responsive (nivel 1)
+- Implementación de interactividad con JavaScript (nivel 1)
 
 ---
 
@@ -26,20 +30,7 @@ El propósito principal del trabajo fue **integrar dos nuevos productos** dentro
 
 - **HTML5**  
 - **CSS3**  
-- **JavaScript**
-
----
-
-## Diseño UI
-
-El diseño proporcionado incluía múltiples detalles visuales, por lo que fue necesario realizar una arquitectura HTML semántica y estilos CSS coherentes.  
-Las maquetas se realizaron en tres resoluciones:
-
-- **Desktop**
-- **Tablet**
-- **Mobile**
-
-Esto permitió construir una web completamente **responsive**, adaptada a diferentes dispositivos.
+- **JavaScript (ES6)**
 
 ---
 
@@ -58,9 +49,11 @@ Esto permitió construir una web completamente **responsive**, adaptada a difere
 
 ## Funcionalidades implementadas con JavaScript
 
-El proyecto incluye varias interacciones dinámicas. A continuación se muestran fragmentos reales del código implementado.
+El proyecto incluye varias interacciones dinámicas que mejoran la experiencia del usuario. A continuación se muestran fragmentos reales del código.
 
-### Cambio de imagen principal dependiendo de las miniaturas seleccionadas
+---
+
+### Cambio de imagen principal según la miniatura seleccionada
 
 ```javascript
 const mainImage = document.getElementById("mainImage");
@@ -73,11 +66,11 @@ for (let i = 0; i < thumbnails.length; i++) {
 }
 ```
 
-Esta funcionalidad permite que el usuario haga clic en una miniatura y la imagen principal cambie automáticamente.
+Permite actualizar la imagen principal del producto al hacer clic en cualquiera de las miniaturas.
 
 ---
 
-### Selección del color
+### Selección de color del producto
 
 ```javascript
 const colorButtons = document.querySelectorAll(".color-dot, .color-dot-watch");
@@ -101,6 +94,8 @@ for (let i = 0; i < colorButtons.length; i++) {
 }
 ```
 
+El usuario puede seleccionar un color, que se guarda para añadirlo posteriormente al carrito.
+
 ---
 
 ### Añadir productos al carrito
@@ -121,12 +116,13 @@ addCartBtn.addEventListener("click", function () {
 });
 ```
 
----
+El carrito se almacena en `localStorage`, permitiendo que los datos persistan mientras el usuario navega.
 
+---
 
 ## Ejemplo de estructura HTML
 
-Aquí un fragmento del HTML principal del producto:
+Fragmento del HTML principal del producto:
 
 ```html
 <main class="product-container">
@@ -145,11 +141,11 @@ Aquí un fragmento del HTML principal del producto:
 
 ---
 
-## Conclusión
+## 📝 Conclusión
 
-Al realizar el proyecto me permitio trabajar todo el flujo del desarrollo web para la parte Frontend:
+Este proyecto me permitió trabajar el flujo completo del desarrollo frontend:
 
 - Interpretación de un diseño estático  
-- Maquetación responsive con HTML5 y CSS3  
+- Construcción de una interfaz responsive con HTML5 y CSS3  
 - Implementación de interactividad real con JavaScript  
 - Gestión de estado mediante `localStorage` y `sessionStorage`  
