@@ -8,9 +8,7 @@ Proyecto realizado como práctica de maquetación y desarrollo web utilizando **
 
 El propósito principal del trabajo fue **integrar dos nuevos productos** dentro de la página existente de Google Store. Para ello, seguí un flujo completo de diseño y desarrollo:
 
-- Crear **wireframes de baja fidelidad**.
-- Diseñar **maquetas en Figma** en tres tamaños: *desktop, tablet y mobile*.
-- Implementar la web utilizando **HTML5 y CSS3**, respetando el diseño original.
+- Implementar la web utilizando **HTML5 y CSS3**, para *desktop, tablet y mobile*.
 - Añadir interactividad con **JavaScript**, incluyendo selección de imágenes, colores y carrito persistente.
 
 ---
@@ -147,9 +145,9 @@ Aquí un fragmento del HTML principal del producto:
 
 ---
 
-## Conclusiones
+## Conclusión
 
-Este proyecto me permitió trabajar todo el flujo completo de diseño y desarrollo web, de la parte Frontend:
+Al realizar el proyecto me permitio trabajar todo el flujo del desarrollo web para la parte Frontend:
 
 - Interpretación de un diseño estático  
 - Maquetación responsive con HTML5 y CSS3  
