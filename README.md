@@ -1,6 +1,6 @@
 # Google-Store-Proyect-frontend
 
-Es un proyecto desarrollado como práctica de **desarrollo web frontend**, implementado con **HTML5, CSS3 y JavaScript**, basado en la recreación de dos productos nuevos dentro de la página de Google Store.
+Es un proyecto desarrollado como práctica de **desarrollo web frontend**, implementado con **HTML5, CSS3 y JavaScript**, basado en la recreación de la página de Google Store (parte de los Earbuds y Watches)
 
 ---
 
