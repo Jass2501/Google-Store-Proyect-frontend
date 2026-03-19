@@ -47,7 +47,7 @@ addCartBtn.addEventListener("click", function () {
   const quantity = quantitySelect.value;
 
   if (selectedColor === "") {
-    alert("Por favor, selecciona un color antes de añadir al carrito.");
+    alert("Debe de seleccionar un color para añadir al carrito.");
     return;
   }
 
@@ -64,7 +64,7 @@ const cartIcon = document.getElementById("cartIcon");
 cartIcon.addEventListener("click", function () {
 
   if (cart.length === 0) {
-    alert("El carrito está vacío");
+    alert("No se ha añadido ningún producto");
     return;
   }
 
