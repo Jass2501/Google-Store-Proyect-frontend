@@ -82,14 +82,13 @@ for (let i = 0; i < colorButtons.length; i++) {
       this.classList.remove("selected");
       selectedColor = "";
       return;
+    }else{
+      for (let j = 0; j < colorButtons.length; j++) {
+        colorButtons[j].classList.remove("selected");
+      }
+      this.classList.add("selected");
+      selectedColor = this.dataset.color;
     }
-
-    for (let j = 0; j < colorButtons.length; j++) {
-      colorButtons[j].classList.remove("selected");
-    }
-
-    this.classList.add("selected");
-    selectedColor = this.dataset.color;
   });
 }
 ```
@@ -107,12 +106,12 @@ addCartBtn.addEventListener("click", function () {
   if (selectedColor === "") {
     alert("Debe de seleccionar un color para añadir al carrito.");
     return;
+  }else{
+    const itemText = `${quantity},${productName},${selectedColor}`;
+    cart.push(itemText);
+    localStorage.setItem("cart", cart.join("|"));
+    alert(`Se añadió ${quantity} ${productName} de color ${selectedColor}.`);
   }
-
-  const itemText = `${quantity},${productName},${selectedColor}`;
-  cart.push(itemText);
-  localStorage.setItem("cart", cart.join("|"));
-  alert(`Se añadió ${quantity} ${productName} de color ${selectedColor}.`);
 });
 ```
 
