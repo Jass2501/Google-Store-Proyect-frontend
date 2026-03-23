@@ -20,18 +20,19 @@ for (let i = 0; i < colorButtons.length; i++) {
       this.classList.remove("selected");
       selectedColor = "";
       return;
-    }
+    } else {
 
-    for (let j = 0; j < colorButtons.length; j++) {
-      colorButtons[j].classList.remove("selected");
-    }
+      for (let j = 0; j < colorButtons.length; j++) {
+        colorButtons[j].classList.remove("selected");
+      }
 
-    this.classList.add("selected");
-    selectedColor = this.dataset.color;
+      this.classList.add("selected");
+      selectedColor = this.dataset.color;
+    }
   });
 }
 
-// CARRITO PERSISTENTE
+// CONTENIDO DEL CARRITO
 
 let cartText = localStorage.getItem("cart");
 let cart = cartText ? cartText.split("|") : [];
@@ -49,12 +50,12 @@ addCartBtn.addEventListener("click", function () {
   if (selectedColor === "") {
     alert("Debe de seleccionar un color para añadir al carrito.");
     return;
+  } else {
+    const itemText = `${quantity},${productName},${selectedColor}`;
+    cart.push(itemText);
+    localStorage.setItem("cart", cart.join("|"));
+    alert(`Se añadió ${quantity} ${productName} de color ${selectedColor}.`);
   }
-
-  const itemText = `${quantity},${productName},${selectedColor}`;
-  cart.push(itemText);
-  localStorage.setItem("cart", cart.join("|"));
-  alert(`Se añadió ${quantity} ${productName} de color ${selectedColor}.`);
 });
 
 // MOSTRAR CARRITO
@@ -66,19 +67,20 @@ cartIcon.addEventListener("click", function () {
   if (cart.length === 0) {
     alert("No se ha añadido ningún producto");
     return;
+  } else {
+
+    let mensaje = "Los productos seleccionados:\n\n";
+
+    for (let i = 0; i < cart.length; i++) {
+
+      const partes = cart[i].split(",");
+      const cantidad = partes[0];
+      const nombre = partes[1];
+      const color = partes[2];
+      mensaje += `- ${cantidad} ${nombre} de color ${color}\n`;
+    }
+    alert(mensaje);
   }
-
-  let mensaje = "Los productos seleccionados:\n\n";
-
-  for (let i = 0; i < cart.length; i++) {
-
-    const partes = cart[i].split(",");
-    const cantidad = partes[0];
-    const nombre = partes[1];
-    const color = partes[2];
-    mensaje += `- ${cantidad} ${nombre} de color ${color}\n`;
-  }
-  alert(mensaje);
 });
 
 // BORRAR DATOS DE PRODUCTOS SI SE REFRESCA LA WEB
