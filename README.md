@@ -82,7 +82,7 @@ for (let i = 0; i < colorButtons.length; i++) {
       this.classList.remove("selected");
       selectedColor = "";
       return;
-    }else{
+    } else {
       for (let j = 0; j < colorButtons.length; j++) {
         colorButtons[j].classList.remove("selected");
       }
@@ -100,19 +100,24 @@ El usuario puede seleccionar un color, que se guarda para añadirlo posteriormen
 ### Añadir productos al carrito
 
 ```javascript
-addCartBtn.addEventListener("click", function () {
-  const quantity = quantitySelect.value;
+const addCartBtn = document.getElementById("addCartBtn");
+  const quantitySelect = document.getElementById("quantity");
 
-  if (selectedColor === "") {
-    alert("Debe de seleccionar un color para añadir al carrito.");
-    return;
-  }else{
-    const itemText = `${quantity},${productName},${selectedColor}`;
-    cart.push(itemText);
-    localStorage.setItem("cart", cart.join("|"));
-    alert(`Se añadió ${quantity} ${productName} de color ${selectedColor}.`);
-  }
-});
+  addCartBtn.addEventListener("click", function () {
+    const quantity = quantitySelect.value;
+    const precio = document.querySelector(".price-ear, .price-watch").textContent;
+
+    if (selectedColor === "") {
+      alert("Debe de seleccionar un color para añadir al carrito.");
+      return;
+    } else {
+      const itemText = `${quantity},${productName},${selectedColor},${precio}`;
+      cart.push(itemText);
+      localStorage.setItem("cart", cart.join("|"));
+      document.getElementById("cartCount").textContent = cart.length;
+      alert(`Se añadió ${quantity} ${productName} de color ${selectedColor}.`);
+    }
+  });
 ```
 
 El carrito se almacena en `localStorage`, permitiendo que los datos persistan mientras el usuario navega.
