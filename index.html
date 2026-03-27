@@ -24,9 +24,10 @@
             </nav>
         </div>
         <div class="header-right">
-            <img src="images/icons/Search-Lupa.svg" alt="Buscar" class="icon-btn">
+            <img id="search" src="images/icons/Search-Lupa.svg" alt="Buscar" class="icon-btn">
             <img src="images/icons/Help-Intrrogación.svg" alt="Ayuda" class="icon-btn">
             <img id="cartIcon" src="images/icons/Cart-Carrito.svg" alt="Carrito" class="icon-btn">
+            <span id="cartCount">0</span>
             <img src="images/icons/Avatar-foto.svg" alt="Cuenta" class="icon-btn">
         </div>
     </header>
@@ -48,7 +49,7 @@
         <aside class="product-info">
             <h1>Google Pixel Buds Pro</h1>
             <p class="category">Music & Sound</p>
-            <p class="price">229€</p>
+            <p class="price-ear">229€</p>
             <hr>
 
             <div class="colors">
@@ -71,6 +72,9 @@
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
 
                     <button class="add-cart" id="addCartBtn">Add to Cart</button>
@@ -94,17 +98,19 @@
                 <img src="images/icons/SM-tiktok.svg" alt="TikTok">
             </div>
 
-            <div class="footer-links">
-                <div class="footer-country">
-                    <img src="images/icons/Spain.svg" alt="Spain">
-                    <span>Spain</span>
-                </div>
-
-                <a href="#">Privacy</a>
-                <a href="#">Google Nest Commitment to Privacy</a>
-                <a href="#">Sales Terms</a>
-                <a href="#">Terms of Service</a>
+            <div class="footer-country">
+                <img src="images/icons/Spain.svg" alt="Spain">
+                <span>Spain</span>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Google Nest Commitment to Privacy</a></li>
+                    <li><a href="#">Sales Terms</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+
         </div>
     </footer>
 

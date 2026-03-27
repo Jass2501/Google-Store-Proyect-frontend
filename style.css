@@ -11,7 +11,6 @@ body {
     color: #333;
 }
 
-/* ------------------ UTILIDADES ------------------ */
 .flex {
     display: flex;
     align-items: center;
@@ -39,53 +38,54 @@ body {
 
 /* ------------------ HEADER ------------------ */
 header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  padding: 0 32px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 0 32px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header-left {
-  display: flex;
-  align-items: center;
-  gap: 2px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
 
 .logo-google {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  color: #3c4043;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4043;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: #1a73e8;
+    color: #1a73e8;
 }
 
 .header-right {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 
@@ -93,6 +93,7 @@ nav ul li a.active {
 p {
     color: #666666;
 }
+
 .product-container {
     max-width: 1200px;
     margin: 40px auto;
@@ -177,10 +178,11 @@ p {
     cursor: pointer;
     transition: .2s;
 }
+
 .color-dot.selected {
-  outline: 1px solid black;
-  outline-offset: 2px;
-  box-shadow: 0 0 0 3px #1a73e8;
+    outline: 1px solid black;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px #1a73e8;
 }
 
 
@@ -224,7 +226,8 @@ p {
 }
 
 .color-dot-watch img {
-    width: 80px;      /* ajusta el tamaño que quieras */
+    width: 80px;
+    /* ajusta el tamaño que quieras */
     height: auto;
     border-radius: 8px;
     transition: transform 0.2s ease, outline 0.2s ease;
@@ -232,9 +235,11 @@ p {
 
 /* Cuando está seleccionado */
 .color-dot-watch.selected img {
-    outline: 3px solid #4285f4; /* azul estilo Google */
+    outline: 3px solid #4285f4;
+    /* azul estilo Google */
     transform: scale(1.05);
 }
+
 .color-dot-watch:hover {
     transform: scale(1.1);
     border-color: #70757a;
@@ -340,9 +345,10 @@ select {
 }
 
 .footer-country {
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 
 .footer-country img {
