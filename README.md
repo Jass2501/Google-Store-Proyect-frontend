@@ -19,10 +19,10 @@ Las metas específicas fueron:
 
 ## Desarrollo técnico
 
-- Diseño de una aplicación web (nivel 1)  
-- Maquetación responsive con HTML5 y CSS3 (nivel 1)  
-- Creación de una página web estática (nivel 1)  
-- Implementación de interactividad con JavaScript (nivel 1)
+- Diseño de una aplicación web
+- Maquetación responsive con HTML5 y CSS3
+- Creación de una página web estática
+- Implementación de interactividad con JavaScript
 
 ---
 
